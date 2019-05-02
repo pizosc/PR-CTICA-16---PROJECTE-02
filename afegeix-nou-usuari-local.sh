@@ -20,7 +20,7 @@ done
 
 echo "Changing password for user" $1
 
-useradd -c $2 $1
+useradd -c $2 $1 -p $password
 
 if [ $? -ne 0 ]
 then
